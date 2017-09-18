@@ -1,0 +1,43 @@
+{
+  "name": "moechain-chain",
+  "version": "0.2.0",
+  "description": "A module to store and interact with blocks",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover ./test/index.js",
+    "coveralls": "npm run coverage && coveralls <coverage/lcov.info",
+    "lint": "standard",
+    "test": "tape ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethereumjs/moechain-chain.git"
+  },
+  "keywords": [
+    "moechain",
+    "blockchain"
+  ],
+  "author": "fling",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Elvenisboy/moechain-chain/issues"
+  },
+  "homepage": "https://github.com/Elvenisboy/moechain-chain#readme",
+  "dependencies": {
+    "async": "^2.1.2",
+    "ethashjs": "^0.0.7",
+    "moechain-block": "https://github.com/Elvenisboy/moechain-block",
+    "ethereumjs-util": "^5.0.1",
+    "flow-stoplight": "^1.0.0",
+    "levelup": "^1.3.0",
+    "memdown": "^1.1.0",
+    "safe-buffer": "^5.1.1",
+    "semaphore": "^1.0.3"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.2",
+    "standard": "^10.0.0-beta.0",
+    "tape": "^4.2.1"
+  }
+}
